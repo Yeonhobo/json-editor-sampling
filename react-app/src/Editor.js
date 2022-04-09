@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Schema from "./Schema"
 import { JSONEditor } from "@json-editor/json-editor"
 
@@ -15,12 +15,16 @@ export default function Editor() {
       schema: updateSchema,
       theme: 'bootstrap4',
     });
+    editor.on('change',() => {
+      const value = editor.getValue();
+      console.log(value)
+    });
   })
   
 
   return (
   <div>
-    <div style={{ margin:"100px", width:"80vw"}}>
+    <div style={{ width:"50vw"}}>
         <div ref={element}></div>
     </div>
   </div>
