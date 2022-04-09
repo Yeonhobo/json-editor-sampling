@@ -59,4 +59,7 @@ i.e.)
 
 
 # Next Steps:
-- Find "dependencies" in source code
+- Find "dependencies" in source code -> validator.js
+- Read about Validator in Wiki for step 1
+    - Figure out if step 1 is already implemented properly (if pattern validation already works)
+- learning about how to change a dependency locally: https://whatapalaver.co.uk/npm-dependency
